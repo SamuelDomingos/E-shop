@@ -1,0 +1,113 @@
+.banner{
+    margin: 1.5rem 0;
+    padding: 1.5rem 2rem;
+    background-color: #fed3dc;
+    width: 100%;
+    min-height: 50vh;
+    border-radius: 20px;
+}
+
+.banner h2{
+    font-size: 3.5em;
+}
+
+.banner .camp-search{
+    flex: 65%;
+}
+
+.banner form{
+    width: 100%;
+    background: none;
+}
+
+.banner label.button-search{
+    cursor: pointer;
+    flex-direction: row !important;
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 20px;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+}
+
+.banner label.button-search svg{
+    font-size: 1.5rem;
+}
+
+.banner label.button-search input{
+    margin-left: 1rem;
+    width: 80%;
+    outline: 0;
+    border: 0;
+    background: none;
+}
+
+.banner .card-banner{
+    border-radius: 10px;
+    flex: 35%;
+    height: 100%;
+    text-align: center;
+    background: rgb(241,186,34);
+    background: linear-gradient(320deg, rgba(241,186,34,1) 51%, rgba(255,221,121,1) 85%);
+}
+
+.banner .card-banner:hover a{
+    transform: scale(1.05);
+}
+
+.banner .card-banner a{
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.banner .card-banner img{
+    width: 100%;
+    height: 80%;
+}
+
+.banner .card-banner p{
+    color: #d8768d;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.banner .links_banner{
+    align-self: baseline;
+    text-align: center;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.banner .links_banner svg{
+    font-size: 2rem;
+    color: #595959;
+    cursor: pointer;
+    margin-bottom: .5rem;
+}
+
+@media screen and (max-width: 760px) {
+
+    .banner{
+        text-align: center;
+    }
+
+    .banner form{
+        margin: 0 auto;
+    }
+
+    .banner label.button-search{
+        margin: 1rem auto;
+    }
+   
+    .banner .card-banner{
+        max-width: 300px;
+    }
+
+    .banner .links_banner{
+        align-self: center;
+    }
+
+  }

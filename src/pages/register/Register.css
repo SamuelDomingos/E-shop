@@ -1,0 +1,66 @@
+.register{
+    margin: 2rem 0;
+}
+
+.register h1{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+form {
+    width: 50%;
+    background-color: #ebeae6;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+form label{
+    width: 100%;
+    justify-content: left !important;
+    align-items: center !important;
+    margin: 1rem 0;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+form label span svg{
+    color: #d8768d;
+    font-size: 2rem;
+    margin-right: .5rem;
+}
+
+form label input{
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    background: none;
+    border: 0;
+}
+
+form .btn-form p a{
+    color: #c86e83;
+    text-decoration: none;
+}
+
+form button.btn-register{
+    cursor: pointer;
+    background-color: #d8768d;
+    color: #fff;
+    border: 0;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    padding: .7rem .9rem;
+    margin-right: 1rem;
+    transition: .4s;
+}
+
+form button.btn-register:hover{
+    background-color: #c86e83;
+}
+
+@media screen and (max-width: 760px) {
+    form{
+        width: 90%;
+    }
+}

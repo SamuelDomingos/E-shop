@@ -1,0 +1,32 @@
+footer{
+    background-color: #3f414d;
+    height: 50vh;
+    justify-content: space-around !important;
+}
+
+footer .logo{
+    font-size: 2em;
+    color: #fff;
+}
+
+footer .logo h2::first-letter{
+    color: #d8768d;
+}
+
+footer p{
+    margin-top: 1rem;
+    color: #fff;
+}
+
+
+footer .contato h2{
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+footer .contato a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #a8a8a8;
+}

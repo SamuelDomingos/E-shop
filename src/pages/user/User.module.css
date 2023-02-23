@@ -1,0 +1,158 @@
+.user{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh;
+    margin: 3rem 0;
+}
+
+.user .userData{
+    min-height: 70vh;
+    padding: 2rem;
+}
+
+.user .userData,
+.shopping{
+    width: 45%;
+    border: 2px solid #d8768d;
+    text-align: center;
+}
+
+.user .userData h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.img_perfil{
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 50%;
+    border: 10px solid #ccc;
+}
+
+.img_perfil img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.img_perfil svg{
+    width: 100%;
+    height: 100%;
+}
+
+.container_perfil{
+    width: max-content;
+    position: relative;
+    margin: 1.5rem auto;
+}
+
+.container_perfil label.icon_perfil{
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    background-color: #ccc;
+    border: 5px solid #d8768d;
+    padding: .5rem .7rem;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.container_perfil label.icon_perfil:hover{
+    background-color: #a9a9a9;
+}
+
+label.icon_perfil svg{
+    font-size: 2rem;
+}
+
+label.icon_perfil input{
+    display: none;
+}
+
+.shopping{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70vh;
+    padding: 1rem;
+}
+
+.shopping .compras_success{
+    border: 1px solid #d8768d;
+    width: 90%;
+    margin: 1rem;
+}
+
+.compras_success_single{
+    display: flex;
+    justify-content: left;
+}
+
+.compras_success_single .item_img{
+    width: 150px;
+    height: 100px;
+    background-color: #d8768d;
+    padding: .5rem;
+}
+
+.compras_success_single .item_img img{
+    width: max-content;
+    height: 100%;
+}
+
+.container_compras{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    padding: .5rem;
+    width: 100%;
+    border-bottom: 1px solid #d8768d;
+}
+
+.container_compras h2{
+    font-size: 1.1rem;
+    color: #d8768d;
+    font-weight: 400;
+}
+
+.container_compras p{
+    font-size: 1.1rem;
+    margin-top: .5rem;
+}
+
+.compras_success p.priceTotal{
+    text-align: left;
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #d5365b;
+}
+
+@media screen and (max-width:800px) {
+    .user{
+        flex-direction: column;
+    }    
+
+    .user .userData,
+    .shopping{
+        width: 80%;
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .user .userData h2{
+        font-size: 1.2rem;
+    }
+
+    .user .userData,
+    .shopping{
+        width: 95%;
+        margin-top: 1.5rem;
+    }
+}

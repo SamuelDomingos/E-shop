@@ -1,0 +1,42 @@
+.product{
+    flex: calc(100% / 4);
+    max-width: 300px;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.product a{
+    text-decoration: none;
+    color: #000;
+}
+
+.product:hover{
+    transform: scale(1.05);
+}
+
+.product .product-img{
+    padding: 1rem;
+    background-color: #ebeae6;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+}
+
+.product img{
+   width: 100%;
+   height: 100%;
+}
+
+.product h2{
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #595959;
+}
+
+.product p{
+    font-size: 1.3rem;
+    font-weight: 400;
+}

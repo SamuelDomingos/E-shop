@@ -1,0 +1,129 @@
+.singleDefault{
+    background-color: #ebeae6;
+    min-height: 80vh;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.singleDefault .img-carousel{
+    width: 50%;
+    height: 100%;
+    max-width: 500px;
+}
+
+.singleDefault .img-carousel img{
+    width: 90%;
+    height: 90%;
+}
+
+.singleDefault .text-single{
+    width: 50%;
+}
+
+.singleDefault .text-single h2{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.singleDefault .text-single p{
+    margin: 1.5rem 0;
+}
+
+.singleDefault .text-single p.price{
+    color: #d8768d;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.singleDefault .text-single p.description{
+    font-size: 1.1em;
+}
+
+.singleDefault .purchase{
+    flex-direction: row !important;
+}
+
+.singleDefault .purchase > span{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #d8768d;
+}
+
+.singleDefault .purchase span.qty{
+    width: 50px;
+    height: 100%;
+    appearance: none;
+    font-size: 1.2rem;
+    border: 1px solid #d8768d;
+    color: #d8768d;
+}
+
+.input-container{
+    height: 45px;
+    flex-direction: row !important;
+    margin-left: 1rem;
+}
+
+.decrease-btn, .increase-btn {
+    cursor: pointer;
+    padding: .7rem;
+    width: 35px;
+    height: 100%;
+    background-color: #da5e7b;
+    border: 0;
+    color: #FFF;
+    font-size: 1.3rem;
+}
+
+.decrease-btn{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.increase-btn{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.singleDefault .purchase > button{
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #d8768d;
+    color: #fff;
+    padding: .5rem .8rem;
+    border: none;
+    margin-left: 1.5rem;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.singleDefault .purchase > button:hover{
+    background-color: #da5e7b;
+}
+
+@media screen and (max-width: 760px) {
+
+    .singleDefault .img-carousel{
+        width: 100%;
+    }
+    
+    .singleDefault .text-single{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .singleDefault .purchase{
+        flex-direction: column !important;
+    }
+
+    .input-container{
+        margin-top: 1rem;
+    }
+
+    .singleDefault .purchase > button{
+        margin-top: 1rem;
+    }
+    
+}

@@ -1,0 +1,70 @@
+.header{
+    justify-content: space-between !important;
+    padding-top: 1.5rem;
+}
+
+.header a{
+    text-decoration: none;
+    color: #000;
+}
+
+.header .logo{
+    font-size: 2em;
+}
+
+.header .logo h2::first-letter{
+    color: #d8768d;
+}
+
+.header .img-perfil{
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.header .buttons svg{
+    cursor: pointer;
+    transition: 0.2s;
+    color: #646464;
+    font-size: 1.5em;
+    margin: 0 1rem;
+}
+
+.header .buttons svg:hover{
+    color: #d8768d;
+}
+
+.header .buttons a.cart-button{
+    position: relative;
+}
+
+.header .buttons a.cart-button:hover{
+    color: #d8768d;
+}
+
+.header .buttons a.cart-button span{
+    position: absolute;
+    right: 5px;
+    bottom: 17px;
+    background-color: #d8768d;
+    color: #FFf;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.header button.btn-exit{
+    background: none;
+    border: 0;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 760px) {
+    .header .buttons{
+        margin-top: 1rem;
+        flex-direction: row !important;
+    }
+}

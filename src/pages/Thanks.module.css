@@ -1,0 +1,55 @@
+.thanks_layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.thanks_layout .card_thanks{
+    text-align: center;
+    background-color: #cacaca;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 50%;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanks_layout .card_thanks svg{
+    font-size: 7rem;
+    color: #e14368;
+}
+
+.thanks_layout .card_thanks h2{
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+.thanks_layout .card_thanks p{
+    margin-top: 1rem;
+}
+
+.thanks_layout .card_thanks p a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #e14368;
+}
+
+.thanks_layout .card_thanks > a{
+    text-decoration: none;
+    background-color: #e14368;
+    color: #fff;
+    padding: .8rem 1rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.thanks_layout .card_thanks > a:hover{
+    transform: scale(1.1);
+}
