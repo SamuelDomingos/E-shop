@@ -1,5 +1,5 @@
 // This is your test secret API key.
-const stripe = require('stripe')('sk_test_51McqshCqEU4P3WRInNRSFDtzyfdPxwafdeRQgUKUUpaySya6FSHvNSnGooz5RvcekNctnv5CjUA4zPkZnDDqXP6g00sfGrGgy0');
+const stripe = require('stripe')('seu codigo aqui!');
 const express = require('express');
 const app = express();
 app.use(express.static('public'));
@@ -30,7 +30,7 @@ app.post("/create-checkout-session", async (req, res) => {
         line_items: cartItems.map((item) => {
 
           const img = item.image[0].asset._ref;
-          const newImage = img.replace('image-', "https://cdn.sanity.io/images/wiqx2knd/production/").replace('-webp', '.webp');
+          const newImage = img.replace('image-', "https://cdn.sanity.io/images/seu_codigo_aqui/production/").replace('-webp', '.webp');
 
           return {
             price_data: {
